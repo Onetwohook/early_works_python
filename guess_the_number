@@ -1,0 +1,29 @@
+import random
+import time
+
+number = random.randint(1, 10)
+
+name = raw_input("What's your name, bucko? ")
+guesses = 0
+
+print "Okay", name,", let's play a game!"
+
+time.sleep(2)
+
+print "Good. Try and guess the number I'm thinking of."
+
+while guesses < 3:
+	guesses += 1
+	guess = int(raw_input("what's your guess? "))
+	if guess < number:
+		print "Too low, numbnuts"
+		
+	if guess > number:
+		print "Too high, dickhead"
+	
+	if guess == number:
+		print "fuckin' lucky"
+		break
+
+else: 
+	print "You didn't get it", name, ". Now, you're fucked."
