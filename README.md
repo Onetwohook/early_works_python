@@ -1,2 +1,2 @@
 # early_works_python
-First every coding. Completed in python
+First ever coding. Completed in python
