@@ -1,0 +1,24 @@
+class team(object):
+	
+	def __init__(self, player):
+		self.player = player
+		
+	def name_striker(self):
+		for line in self.player:
+			print line
+
+fave_team = ["The mighty Arsenal"]
+best_striker = team(fave_team)
+
+striker = raw_input("Who is better Kane or Laca? > ")
+		
+if striker == "Kane":
+		print "gross"
+		best_striker.name_striker()
+elif striker == "Laca":
+	print "good choice"	
+	best_striker.name_striker()	
+else:
+	print "Fuck you,"
+	print "It's:"
+	best_striker.name_striker()
